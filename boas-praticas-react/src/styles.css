@@ -1,0 +1,224 @@
+.app {
+    display: flex;
+    height: 100vh;
+    background: #1c2e57;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #1c2e57;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 350px; /* aumenta o tamanho do menu */
+  background-color: #1c2e57;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza os itens */
+  padding: 20px 10px;
+   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sidebar-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.sidebar-image img {
+  max-width: 180px;   /* controla largura máxima */
+  height: auto;       /* mantém proporção */
+  object-fit: contain; /* evita distorções */
+  margin-bottom: 40px;
+}
+
+/* Barra de pesquisa */
+.search {
+    background: #fff;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background: white;
+
+}
+
+.search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    background: transparent;
+    color: #555;
+}
+
+.search input::placeholder {
+    color: #aaa;
+}
+
+.search-circle {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* Estilo base dos botões */
+button.search-result {
+  background-color: #2f4579; /* cor de fundo azul escuro */
+  color: white; /* texto branco */
+  border: none;
+  border-radius: 5px; /* cantos arredondados */
+  padding: 15px 25px; /* espaçamento interno */
+  margin-right: 8px; /* espaço entre os botões */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover - quando o mouse passa por cima */
+button.search-result:hover {
+  background-color: #162448; /* azul mais escuro */
+}
+
+
+nav {
+    flex: 1;
+}
+
+nav button {
+    display: block;
+    width: 90%;
+    margin: 6px auto;
+    padding: 14px 10px;
+    background: #fff;
+    color: #1c2e57;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: all .2s ease;
+}
+
+nav button.active {
+    background: #fff;
+    color: #1c2e57;
+}
+
+nav button.active::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 20px solid #fff;
+}
+
+/* CONTEÚDO */
+.content-area {
+    flex: 1;
+    background: #1c2e57;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    background: #fff;
+    color: #1c2e57;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.page-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.page-image img {
+  max-width: 1200px;
+  min-width: 1200px;
+  max-height: 300px;
+  opacity: 0.9;
+}
+
+.content-box {
+    flex: 1;
+    background: #fff;
+    border-radius: 30px;
+    padding: 50px;
+    overflow-y: auto;
+    min-width: 1500px;
+    max-width: 1500px;
+    min-height: 800px;
+    max-height: 800px;
+}
+
+.section {
+    min-width: 1200px;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    color: #1c2e57;
+}
+
+.section h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    text-align: justify;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.section ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+/* Scrollbar */
+.content-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 20px;
+}
