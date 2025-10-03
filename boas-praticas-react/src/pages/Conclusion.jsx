@@ -26,7 +26,9 @@ export default function Intro() {
     <li>Notificar imediatamente o GTI sobre qualquer incidente, como problemas técnicos, solicitações de acesso, suspeitas de violação ou necessidade de alterações.</li>
     <li>Garantir a confidencialidade e proteção das informações tratadas no ambiente institucional.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/conc1.png" />
+      </div>
   <h3>8.2 - Compromisso da Organização</h3>
   <p>A SEJUSC compromete-se a:</p>
   <ul>
@@ -34,7 +36,9 @@ export default function Intro() {
     <li>Oferecer suporte técnico eficiente e orientações claras para o cumprimento das funções.</li>
     <li>Manter auditorias regulares e monitoramento ético para proteger os recursos institucionais e os dados dos titulares.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/conc2.png" />
+      </div>
   <h3>8.3 - Colaboração Mútua</h3>
   <p>
     O sucesso dessas políticas depende do comprometimento e colaboração de
@@ -46,9 +50,9 @@ export default function Intro() {
     atender as demandas e orientar os colaboradores sobre boas práticas de
     segurança da informação.
   </p></p>
-{/* Imagem no final da página */}
+
       <div className="page-image">
-        <img src="/images/conclusao.png" />
+        <img src="/images/conc3.png" />
       </div>
         </div>
     );
