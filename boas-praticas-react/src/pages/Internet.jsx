@@ -36,7 +36,9 @@ export default function Intro() {
     <li>O GTI realiza monitoramento contínuo do uso da internet para garantir conformidade com as políticas institucionais e identificar possíveis acessos indevidos ou ameaças à segurança da informação.</li>
     <li>Todas as atividades de navegação estão sujeitas a auditorias e revisões, sendo assegurado o sigilo sobre o conteúdo acessado, salvo em casos de investigação formal.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/int1.png" />
+      </div>
   <h3>5.2 - Políticas de E-mail</h3>
   <p>O uso do e-mail corporativo é uma ferramenta essencial para a comunicação institucional e deve seguir rigorosamente as normas estabelecidas:</p>
 
@@ -66,7 +68,7 @@ export default function Intro() {
   </p>
 {/* Imagem no final da página */}
       <div className="page-image">
-        <img src="/images/internet.png" />
+        <img src="/images/int2.png" />
       </div>
         </div>
 
