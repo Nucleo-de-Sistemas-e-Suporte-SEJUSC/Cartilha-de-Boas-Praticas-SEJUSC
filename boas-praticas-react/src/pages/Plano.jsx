@@ -10,7 +10,9 @@ export default function Intro() {
     resolução de incidentes relacionados à segurança da informação, como
     vazamentos de dados ou falhas críticas nos sistemas.
   </p>
-
+      <div className="page-image">
+        <img src="/images/plano1.png" />
+      </div>
   <h3>1. Definição de Incidente</h3>
   <p>Um incidente de segurança é qualquer evento que possa comprometer:</p>
   <ul>
@@ -24,7 +26,9 @@ export default function Intro() {
     <li>Acessos não autorizados a sistemas internos.</li>
     <li>Falhas críticas em servidores, redes ou sistemas que impactem operações.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/plano2.png" />
+      </div>
   <h3>2. Ações Imediatas</h3>
   <h4>Passo 1: Identificação e Contenção</h4>
   <ul>
@@ -47,7 +51,9 @@ export default function Intro() {
       </ul>
     </li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/plano3.png" />
+      </div>
   <h3>3. Análise e Resposta</h3>
   <p><strong>Responsabilidade do GTI:</strong></p>
   <ul>
@@ -65,7 +71,9 @@ export default function Intro() {
     <li>Ativar backups ou redundâncias para restaurar operações.</li>
     <li>Informar setores internos afetados e a alta gestão, se aplicável.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/plano4.png" />
+      </div>
   <h3>4. Registro e Documentação</h3>
   <ul>
     <li>O GTI deve registrar o incidente em um relatório contendo:
@@ -77,7 +85,9 @@ export default function Intro() {
       </ul>
     </li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/plano5.png" />
+      </div>
   <h3>5. Notificação Externa</h3>
   <ul>
     <li>
@@ -95,7 +105,9 @@ export default function Intro() {
       </ul>
     </li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/plano6.png" />
+      </div>
   <h3>6. Melhoria Contínua</h3>
   <p>Após a resolução do incidente:</p>
   <ul>
@@ -116,7 +128,7 @@ export default function Intro() {
   </ol></p>
 {/* Imagem no final da página */}
       <div className="page-image">
-        <img src="/images/Plano.png" />
+        <img src="/images/plano7.png" />
       </div>
         </div>
     );
