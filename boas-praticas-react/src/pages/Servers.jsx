@@ -27,7 +27,9 @@ export default function Intro() {
   <ul>
     <li>É estritamente proibido compartilhar credenciais de acesso ou permitir que terceiros não autorizados utilizem pastas compartilhadas.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/serv1.png" />
+      </div>
   <h3>6.2 - Organização e Armazenamento de Arquivos</h3>
   <p>Para manter a eficiência e segurança dos dados, é essencial seguir as boas práticas de organização e armazenamento:</p>
   <h4>6.2.1 Organização setorial:</h4>
@@ -47,7 +49,9 @@ export default function Intro() {
     <li>Este repositório possui capacidade limitada de 100 GB e é sujeito a limpezas regulares realizadas pelo GTI.</li>
     <li>Para transferências frequentes entre setores, os gestores devem solicitar ao GTI a criação de uma pasta específica para facilitar o compartilhamento.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/serv2.png" />
+      </div>
   <h3>6.3 - Backup e Restauração de Dados</h3>
   <p>O GTI realiza backups regulares para proteger os dados institucionais contra perdas acidentais ou falhas técnicas:</p>
   <h4>6.3.1 Backup designado:</h4>
@@ -60,7 +64,9 @@ export default function Intro() {
   <ul>
     <li>Em caso de perda ou exclusão acidental de arquivos, os gestores devem comunicar imediatamente ao GTI para avaliar a possibilidade de recuperação via backup.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/serv3.png" />
+      </div>
   <h3>6.4 - Monitoramento e Conformidade</h3>
   <p>Para proteger os recursos institucionais e garantir o uso responsável das pastas e dispositivos, a SEJUSC mantém políticas de monitoramento e conformidade:</p>
   <h4>6.4.1 Monitoramento de uso:</h4>
@@ -81,3 +87,4 @@ export default function Intro() {
         </div>
     );
 }
+
