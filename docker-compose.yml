@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    # Constroi a imagem a partir do Dockerfile no diretório atual (.)
+    build: .
+
+    # Define um nome para o contêiner para facilitar a identificação
+    container_name: boas-praticas-sejusc
+
+    # Define a política de reinício
+    restart: always
+
+    # Mapeia a porta 8085 do seu servidor para a porta 80 do contêiner
+    ports:
+      - "8085:80"

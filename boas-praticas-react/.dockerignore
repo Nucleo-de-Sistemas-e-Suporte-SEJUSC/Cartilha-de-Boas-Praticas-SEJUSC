@@ -1,0 +1,16 @@
+# Dependências
+node_modules
+
+# Arquivos de build (serão gerados dentro do contêiner)
+dist
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Git
+.git
+.gitignore
+
+# Outros
+README.md
