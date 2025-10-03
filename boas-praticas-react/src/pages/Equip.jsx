@@ -4,7 +4,7 @@ export default function Intro() {
             <p>
             <h2>3. COMPUTADORES, EQUIPAMENTOS E DISPOSITIVOS</h2>
 
-  <h4>3.1 - Uso de Computadores e Notebooks</h4>
+  <h3>3.1 - Uso de Computadores e Notebooks</h3>
   <p>Os dispositivos fornecidos pela SEJUSC são ferramentas institucionais que devem ser utilizados exclusivamente para atividades profissionais. Isso inclui:</p>
   <ol>
     <li>
@@ -24,8 +24,10 @@ export default function Intro() {
       </ul>
     </li>
   </ol>
-
-  <h4>3.2 - Periféricos e Outros Dispositivos</h4>
+      <div className="page-image">
+        <img src="/images/equip1.png" />
+      </div>
+  <h3>3.2 - Periféricos e Outros Dispositivos</h3>
   <p>Os periféricos institucionais, como teclados, mouses, câmeras, fones de ouvido e outros acessórios, são recursos fornecidos para uso exclusivo nas atividades profissionais. É importante seguir as diretrizes abaixo:</p>
   <ol>
     <li>
@@ -39,11 +41,13 @@ export default function Intro() {
       </ul>
     </li>
   </ol>
-
-  <h4>3.3 - Impressoras Corporativas</h4>
+      <div className="page-image">
+        <img src="/images/equip2.png" />
+      </div>
+  <h3>3.3 - Impressoras Corporativas</h3>
   <p>As impressoras institucionais disponíveis na SEJUSC são recursos gerenciados por uma empresa terceirizada responsável pelo serviço de outsourcing de impressão. Este serviço inclui a manutenção dos equipamentos, fornecimento de toner e papel (resmas) e monitoramento do uso. Para garantir o uso eficiente e responsável, as seguintes diretrizes devem ser observadas:</p>
 
-  <h5>3.3.1 - Finalidade e Uso Profissional</h5>
+  <h4>3.3.1 - Finalidade e Uso Profissional</h4>
   <ol>
     <li>
       <strong>Impressões permitidas:</strong>
@@ -60,37 +64,39 @@ export default function Intro() {
     </li>
   </ol>
 
-  <h5>3.3.2 - Impressão de Documentos com dados Pessoais, Sensíveis ou Sigilosos</h5>
+  <h4>3.3.2 - Impressão de Documentos com dados Pessoais, Sensíveis ou Sigilosos</h4>
   <ul>
     <li>a. Ao imprimir documentos que contenham informações pessoais ou sensíveis (dados pessoais protegidos pela LGPD, relatórios financeiros ou administrativos sigilosos), os colaboradores devem garantir que terceiros, não autorizados, não tenham acesso a essas informações durante ou após a impressão. Retire os documentos da impressora com brevidade e armazene-os em locais seguros.</li>
   </ul>
 
-  <h6>3.3.2.1 - Descarte seguro</h6>
+  <h5>3.3.2.1 - Descarte seguro</h5>
   <ul>
     <li>a. No caso de descarte, documentos impressos que possuam dados pessoais ou sensíveis devem ser descartados de forma segura, descaracterizando os dados e utilizando fragmentadoras para evitar vazamentos.</li>
     <li>b. Folhas com informações de usuários ou de servidores não podem ser jogadas em lixo comum, devem ser trituradas ou incineradas.</li>
   </ul>
 
-  <h5>3.3.3 - Procedimentos Operacionais</h5>
+  <h4>3.3.3 - Procedimentos Operacionais</h4>
   <ul>
-    <li>3.3.3.1 <strong>Solicitação de manutenção ou suprimentos:</strong> Caso ocorra falha na impressora ou necessidade de reposição de toner ou papel, o colaborador deve comunicar imediatamente ao GTI.</li>
-    <li>3.3.3.2 <strong>Resmas de papel:</strong> O papel fornecido é de uso exclusivo para as atividades institucionais. Evite desperdício e imprima em frente e verso sempre que possível.</li>
-    <li>3.3.3.3 <strong>Toners e suprimentos:</strong> A substituição de toners deve ser feita exclusivamente pela equipe responsável da empresa terceirizada ou pelo GTI, quando orientado. É proibido o manuseio pelos colaboradores.</li>
+    <li><h5>3.3.3.1<strong>Solicitação de manutenção ou suprimentos:</strong></h5> Caso ocorra falha na impressora ou necessidade de reposição de toner ou papel, o colaborador deve comunicar imediatamente ao GTI.</li>
+    <li><h5>3.3.3.2 <strong>Resmas de papel:</strong></h5> O papel fornecido é de uso exclusivo para as atividades institucionais. Evite desperdício e imprima em frente e verso sempre que possível.</li>
+    <li><h5>3.3.3.3 <strong>Toners e suprimentos:</strong></h5> A substituição de toners deve ser feita exclusivamente pela equipe responsável da empresa terceirizada ou pelo GTI, quando orientado. É proibido o manuseio pelos colaboradores.</li>
   </ul>
 
-  <h5>3.3.4 - Monitoramento e Controle de Impressões</h5>
+  <h4>3.3.4 - Monitoramento e Controle de Impressões</h4>
   <ul>
-    <li>3.3.4.1 <strong>Monitoramento:</strong> A empresa terceirizada realiza o monitoramento do volume de impressões, garantindo que o uso esteja dentro dos limites contratados.</li>
-    <li>3.3.4.2 <strong>Relatórios de impressão:</strong> Relatórios periódicos podem ser solicitados pela gestão da SEJUSC para avaliação do consumo e identificação de irregularidades.</li>
+    <li><h5>3.3.4.1 <strong>Monitoramento:</strong></h5> A empresa terceirizada realiza o monitoramento do volume de impressões, garantindo que o uso esteja dentro dos limites contratados.</li>
+    <li><h5>3.3.4.2 <strong>Relatórios de impressão:</strong></h5> Relatórios periódicos podem ser solicitados pela gestão da SEJUSC para avaliação do consumo e identificação de irregularidades.</li>
   </ul>
 
-  <h5>3.3.5 - Exceções e Casos Especiais</h5>
+  <h4>3.3.5 - Exceções e Casos Especiais</h4>
   <ul>
-    <li>3.3.5.1 <strong>Uso pessoal autorizado:</strong> Em situações excepcionais, como necessidade urgente de impressão pessoal, é obrigatório obter aprovação prévia do gestor da unidade ou setor, devidamente formalizada.</li>
-    <li>3.3.5.2 <strong>Impressões externas:</strong> Caso as impressoras internas não estejam disponíveis, o gestor pode aprovar a solicitação de serviços externos mediante justificativa.</li>
+    <li><h5>3.3.5.1 <strong>Uso pessoal autorizado:</strong></h5> Em situações excepcionais, como necessidade urgente de impressão pessoal, é obrigatório obter aprovação prévia do gestor da unidade ou setor, devidamente formalizada.</li>
+    <li><h5>3.3.5.2 <strong>Impressões externas:</strong></h5> Caso as impressoras internas não estejam disponíveis, o gestor pode aprovar a solicitação de serviços externos mediante justificativa.</li>
   </ul>
-
-  <h4>3.4 - Celulares e Chips Corporativos</h4>
+      <div className="page-image">
+        <img src="/images/equip5.png" />
+      </div>
+  <h3>3.4 - Celulares e Chips Corporativos</h3>
   <ol>
     <li>
       <strong>Uso exclusivo:</strong>
@@ -108,13 +114,14 @@ export default function Intro() {
     </li>
   </ol>
 
-  <h4>3.5 - Movimentação de Equipamentos</h4>
+  <h3>3.5 - Movimentação de Equipamentos</h3>
   <p>Os equipamentos de TI não podem ser trocados de setor ou usuário sem autorização formal do GTI.</p>
 </p>
 {/* Imagem no final da página */}
       <div className="page-image">
-        <img src="/images/Equip.png" />
+        <img src="/images/equip3.png" />
       </div>
         </div>
     );
 }
+
