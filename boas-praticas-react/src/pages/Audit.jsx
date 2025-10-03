@@ -29,6 +29,10 @@ export default function Intro() {
     <li>A SEJUSC assegura que informações pessoais não serão acessadas, salvo em situações estritamente necessárias e devidamente justificadas.</li>
   </ul>
 
+  <div className="page-image">
+        <img src="/images/moni1.png" />
+      </div>
+
   <h3>7.2 - Investigação de Atividades Suspeitas</h3>
 
   <h4>7.2.1 Procedimentos em caso de violações:</h4>
@@ -43,7 +47,7 @@ export default function Intro() {
   </ul></p>
 {/* Imagem no final da página */}
       <div className="page-image">
-        <img src="/images/Auditoria.png" />
+        <img src="/images/moni2.png" />
       </div>
         </div>
   );
