@@ -4,9 +4,9 @@ export default function Intro() {
             <p>
            <h2>2. OBJETIVO</h2>
 
-  <h4>2.1 - Proteção de Dados</h4>
+  <h3>2.1 - Proteção de Dados</h3>
   O objetivo é garantir:
-
+      <p></p>
   <ol>
     <li>
       <strong>Segurança e integridade:</strong> 
@@ -22,7 +22,11 @@ export default function Intro() {
     </li>
   </ol>
 
-  <h4>2.2 - Responsabilidades Gerais</h4>
+  <div className="page-image">
+        <img src="/images/objetivo1.png" />
+      </div>
+
+  <h3>2.2 - Responsabilidades Gerais</h3>
   <ol start="1">
     <li>
       <strong>Treinamentos e conscientização:</strong> 
@@ -45,7 +49,7 @@ export default function Intro() {
   </p>
 {/* Imagem no final da página */}
       <div className="page-image">
-        <img src="/images/Objetivo.png" />
+        <img src="/images/objetivo2.png" />
       </div>
         </div>
     );
