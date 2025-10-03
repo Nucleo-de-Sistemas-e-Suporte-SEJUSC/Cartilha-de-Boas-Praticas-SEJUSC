@@ -18,7 +18,9 @@ export default function Intro() {
     <li>É estritamente proibido instalar ou utilizar softwares não licenciados, piratas ou que não possuam uma justificativa técnica clara e aprovada.</li>
     <li>Essa medida evita riscos de segurança cibernética, prejuízos financeiros e possíveis sanções legais à instituição.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/soft1.png" />
+      </div>
   <h3>4.2 - Sistemas Internos</h3>
   <p>O acesso e o uso dos sistemas internos da SEJUSC, como o SIGED, Rede e outros sistemas institucionais, demandam responsabilidade e práticas seguras:</p>
 
@@ -49,7 +51,9 @@ export default function Intro() {
   <ul>
     <li>Senhas devem ser alteradas regularmente, preferencialmente a cada 90 dias, ou imediatamente em caso de suspeita de comprometimento.</li>
   </ul>
-
+      <div className="page-image">
+        <img src="/images/soft2.png" />
+      </div>
   <h3>4.3 - Cadastro e Remoção de Usuários</h3>
   <p>O controle de usuários nos sistemas internos é essencial para garantir segurança e evitar acessos indevidos:</p>
 
@@ -66,7 +70,7 @@ export default function Intro() {
   </ul></p>
 {/* Imagem no final da página */}
       <div className="page-image">
-        <img src="/images/Sistemas.png" />
+        <img src="/images/soft3.png" />
       </div>
         </div>
     );
