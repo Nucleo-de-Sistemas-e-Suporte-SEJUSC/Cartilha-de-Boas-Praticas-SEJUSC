@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     background: #1c2e57;
+    min-height: 100vh;
     
 }
 html, body {
@@ -23,9 +24,10 @@ body {
 .sidebar {
   width: 280px;
   max-width: 100%;
+  flex-shrink: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .app {
     flex-direction: column;
   }
@@ -114,7 +116,6 @@ button.search-result:hover {
   background-color: #162448; /* azul mais escuro */
 }
 
-
 nav {
     flex: 1;
 }
@@ -157,10 +158,10 @@ nav button.active::after {
 .content-area {
     flex: 1;
     background: #1c2e57;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza */
+    align-items: stretch; /* muda de center para stretch */
     gap: 20px;
 }
 
@@ -190,10 +191,10 @@ nav button.active::after {
   flex: 1;
   background: #fff;
   border-radius: 20px;
-  padding: 30px;
+  padding: 50px;
   width: 100%;
   overflow-y: auto;
-  max-width: 1200px;
+  max-width: none;
   margin: 0 auto 20px auto;
 }
 
@@ -256,7 +257,14 @@ nav button.active::after {
     padding: 10px;
     border-radius: 15px;
   }
+  .sidebar {
+    width: 100%; 
+  }
 
+  .content-area {
+    width: 100%;
+    border-radius: 0;
+  }
   .section {
     padding: 0 10px;
     font-size: 14px;
