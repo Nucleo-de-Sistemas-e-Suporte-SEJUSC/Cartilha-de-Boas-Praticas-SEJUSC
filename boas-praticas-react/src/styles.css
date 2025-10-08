@@ -329,11 +329,12 @@ h1,h2,h3,h4,h5{
   object-fit: contain;
   border-radius: 12px;
 }
-/* Tablets e telas médias: transforma sidebar em "barra superior" ou grid leve */
+/* Tablets e telas médias */
 @media (max-width: 1100px) {
   .app {
     flex-direction: column;
     height: auto;
+    overflow-x: hidden;
   }
 
   .sidebar {
@@ -342,28 +343,87 @@ h1,h2,h3,h4,h5{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 16px 10px;
     gap: 10px;
+    background-color: #1c2e57;
+    position: relative;
+    z-index: 10;
+    display: flex !important; /* força exibição */
   }
 
   #menu {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+    width: 100%;
+    display: flex !important; /* evita sumir */
+  }
+
+  .menu-button img {
+    width: 150px;
+    height: auto;
+  }
+
+  .content-area {
+    padding: 20px 16px 100px;
+    width: 100%;
+  }
+
+  .content-box {
+    padding: 25px;
+    max-width: 95%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 10px;
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    display: flex !important; /* impede de desaparecer */
+  }
+
+  #menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+    width: 100%;
     gap: 8px;
   }
 
-  .menu-button img { width: 140px; }
-  .content-area { padding: 20px 16px 100px; }
-  .content-box { padding: 20px; max-width: 95%; }
-}
+  .menu-button img {
+    width: 130px;
+    height: auto;
+  }
 
-/* Celulares: compacta e ajusta tamanhos */
-@media (max-width: 768px) {
-  .sidebar { flex-direction: column; padding: 10px; gap: 8px; }
-  .menu-button img { width: 110px; }
-  .title { padding: 8px 18px; font-size: 16px; border-radius: 30px; }
-  .content-area { padding: 12px 12px 100px; }
-  .content-box { padding: 12px; border-radius: 12px; }
-  .app-footer { font-size: 14px; padding: 10px 6px; }
+  .title {
+    padding: 10px 24px;
+    font-size: 18px;
+    border-radius: 36px;
+  }
+
+  .content-area {
+    padding: 12px 14px 120px;
+    width: 100%;
+  }
+
+  .content-box {
+    padding: 16px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .app-footer {
+    font-size: 14px;
+    padding: 10px 6px;
+  }
 }
