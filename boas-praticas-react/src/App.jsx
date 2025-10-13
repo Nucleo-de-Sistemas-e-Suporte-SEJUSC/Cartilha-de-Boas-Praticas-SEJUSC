@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Intro from "./pages/Intro";
 import Objetivo from "./pages/Objetivo";
@@ -11,10 +10,14 @@ import Conclusion from "./pages/Conclusion";
 import Plano from "./pages/Plano";
 import "./styles.css";
 import Footer from "./components/Footer";
+import Equipe from "./pages/Equipe";
+import { useEffect, useState, useRef } from "react";
+
 
 
 
 function App() {
+  const contentRef = useRef(null);
   const [activeSection, setActiveSection] = useState("intro");
   const [query, setQuery] = useState("");
   
@@ -73,8 +76,22 @@ function App() {
       content:
         "plano resposta incidentes segurança informação vazamento dados falhas sistemas confidencialidade integridade disponibilidade LGPD dados pessoais sensíveis dispositivos internos acessos não autorizados identificação contenção comunicação GTI notificação análise impacto baixo impacto alto impacto causa raiz ações corretivas isolamento sistemas backups restauração operações setores internos alta gestão registro documentação relatório medidas mitigação impacto prevenção recorrência notificação externa ANPD titulares dados comprometidos medidas mitigação melhoria contínua revisão políticas procedimentos treinamentos colaboradores boas práticas implementação técnicas fluxo identificação contenção análise mitigação recuperação documentação notificação aperfeiçoamento",
     },
-    
+    equipe: {
+  component: <Equipe />,
+  title: "",
+  content: "equipe desenvolvimento front-end back-end design tecnologia",
+},
+
   };
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollTo({
+        top: 0,
+        behavior: "smooth", // opcional
+      });
+    }
+  }, [activeSection]);
 
   const filterSections = () => {
     if (!query) return sections[activeSection].component;
@@ -90,25 +107,59 @@ function App() {
         </div>
       );
 
-    return results.map((key) => (
-      <button
-        key={key}
-        onClick={() => {
-          setActiveSection(key);
-          setQuery("");
-        }}
-        className="search-result"
-      >
-        {sections[key].title}
-      </button>
-    ));
-  };
+   return results.map((key) => (
+    <button
+      key={key}
+      onClick={() => {
+        // Troca a seção ativa
+        setActiveSection(key);
+
+        // Espera o conteúdo renderizar antes de rolar
+        setTimeout(() => {
+          if (contentRef.current) {
+            const contentBox = contentRef.current;
+            const searchTerm = query.toLowerCase();
+
+            // Tenta encontrar o texto dentro do conteúdo
+            const walker = document.createTreeWalker(
+              contentBox,
+              NodeFilter.SHOW_TEXT
+            );
+            let node;
+            while ((node = walker.nextNode())) {
+              const text = node.textContent.toLowerCase();
+              const index = text.indexOf(searchTerm);
+              if (index !== -1) {
+                // Cria um range e faz scroll até o termo
+                const range = document.createRange();
+                range.setStart(node, index);
+                range.setEnd(node, index + searchTerm.length);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                range.startContainer.parentElement.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                });
+                break;
+              }
+            }
+          }
+        }, 300); // pequeno atraso pra garantir que a seção já foi renderizada
+
+        // Limpa a pesquisa
+        setQuery("");
+      }}
+      className="search-result"
+    >
+      {sections[key].title}
+    </button>
+  ));
+};
+
 
   return (
     <div className="app">
-
-
-
       <Sidebar
         sections={sections}
         activeSection={activeSection}
@@ -116,17 +167,23 @@ function App() {
         query={query}
         setQuery={setQuery}
       />
+
       <main className="content-area">
         <div className="title">
           POLÍTICAS DE BOAS PRÁTICAS DE USO DE TECNOLOGIA E PROTEÇÃO DE DADOS
           DA SEJUSC
         </div>
-        <div className="content-box">{filterSections()}</div>
+
+        <div className="content-box" ref={contentRef}>
+          {filterSections()}
+        </div>
       </main>
-       {/* Rodapé */}
-    <Footer />
+
+      {/* Rodapé */}
+      <Footer />
     </div>
   );
 }
+
 
 export default App;
