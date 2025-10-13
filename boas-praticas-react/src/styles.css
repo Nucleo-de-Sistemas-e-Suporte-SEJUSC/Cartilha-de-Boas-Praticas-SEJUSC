@@ -378,87 +378,6 @@ nav button {
 }
 
 
-/*
-====================================
-  7. MEDIA QUERIES (RESPONSIVIDADE)
-====================================
-*/
-
-/* Tablets e telas médias (transição para layout de coluna) */
-@media (max-width: 1000px) {
-    .app {
-        flex-direction: column; /* Coloca sidebar em cima do conteúdo */
-        height: auto;
-        overflow-x: hidden; /* Evita scroll horizontal */
-    }
-    
-    .sidebar {
-         /* REVERTER O COMPORTAMENTO FIXO DO DESKTOP */
-        position: relative; /* Volta ao fluxo normal (não fixa) */
-        height: auto;
-        top: unset;
-        left: unset;
-        
-        width: 100%;
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 20px 10px;
-        gap: 14px;
-        min-width: unset; 
-
-        margin-top: 150px;
-    }
-
-    #menu {
-        flex-direction: row; /* Itens do menu lado a lado */
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    /* AJUSTE CRÍTICO: Imagens do menu lado a lado */
-    .menu-button {
-        width: auto; /* Permite que o botão se ajuste ao conteúdo/imagem */
-    }
-
-    .menu-button img {
-        width: 100%; /* A imagem preenche o menu-button */
-        max-width: 140px; /* Limite máximo para a imagem do botão */
-    }
-    
-    .sidebar-image.top img,
-    .sidebar-image.bottom img {
-        /* Ajuste o posicionamento da imagem principal */
-        width: 100px;
-        margin: 10px;
-    }
-
-    .content-area {
-        /* REMOVER A COMPENSAÇÃO DA SIDEBAR FIXA */
-        margin-left: 0; /* A sidebar não está mais na lateral, remove a margem */
-        
-        /* Ajuste o padding para o modo tablet */
-        padding: 25px 18px 100px;
-        min-height: auto;
-    }
-
-    .content-box {
-        padding: 30px;
-        max-width: 90%;
-        max-height: 500px;;
-    }
-    
-    .title {
-      margin-top: 10px;
-       padding: 10px 15%; /* usa % em vez de px fixo, com um bom recuo */
-        max-width: 90%; /* Garante que não ultrapasse a tela */
-        font-size: 20px; /* Reduz ligeiramente o tamanho da fonte */
-    }
-}
-
-
 .team-container {
   display: flex;
   justify-content: center;
@@ -500,4 +419,84 @@ nav button {
 .team-card p {
   font-size: 0.9rem;
   color: #cdd4f0;
+}
+
+
+/* ====================================
+   7. AJUSTES PARA NOTEBOOKS (1024px–1440px)
+==================================== */
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+  /* Sidebar mais compacta */
+  .sidebar {
+    width: 260px;
+    padding: 20px 10px;
+    margin-left: 15px;
+  }
+
+  .menu-button img {
+    width: 80%;
+    max-width: 180px;
+  }
+
+  /* Área de conteúdo ajustada */
+  .content-area {
+    margin-left: 260px;
+    padding: 100px 40px 30px;
+  }
+
+  .title {
+    font-size: 20px;
+    padding: 8px 35px;
+    margin-top: -60px;
+  }
+
+  .content-box {
+    padding: 30px;
+    max-width: 1200px;
+    max-height: 650px;
+  }
+
+  .section h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .section h3 {
+    font-size: 1.3rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+
+  /* Cards da equipe mais proporcionais */
+  .team-card {
+    width: 200px;
+    padding: 12px;
+  }
+
+  .team-photo {
+    height: 220px;
+  }
+
+  /* Barra de pesquisa */
+  .search {
+    height: 36px;
+    padding: 0 10px;
+  }
+
+  button.search-result {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .app-footer {
+    font-size: 16px;
+    padding: 10px 8px;
+  }
 }
