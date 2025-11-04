@@ -1,0 +1,257 @@
+/* Container principal para layout flexível */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ------------------ Sidebar Estilos (FIXA) ------------------ */
+.sidebar-container {
+  width: 300px; /* Largura da barra lateral */
+  position: fixed; /* O MAIS IMPORTANTE: FIXA A BARRA LATERAL */
+  top: 0;
+  left: 0;
+  height: 100%; /* Ocupa toda a altura da tela */
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.sidebar-header {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-app-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0a1d54;
+  margin-bottom: 15px;
+}
+
+.sidebar-app-title .header-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 8px 10px 8px 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 0.9em;
+  background: transparent;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* Lista de Itens (com rolagem) */
+.sidebar-menu-list {
+  flex-grow: 1; /* Ocupa o espaço entre o cabeçalho e o rodapé */
+  overflow-y: auto; /* Permite rolagem apenas para os itens de menu */
+  padding: 10px 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 2px 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+  border-left: 5px solid transparent;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #777;
+  width: 20px; /* Garante alinhamento */
+  text-align: center;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+/* Estilo para o item ativo (o mais importante para feedback de navegação) */
+.sidebar-item.active {
+  background-color: #e0f7fa; /* Fundo azul claro para ativo */
+  color: #0a1d54; /* Texto e ícone azul */
+  border-left-color: #0a1d54; /* Borda lateral azul */
+  font-weight: bold;
+  width: 100%;
+}
+
+/* 🔍 Resultados da busca */
+.search-result {
+  display: block;
+  width: 90%;
+  margin: 6px auto;
+  padding: 10px 14px;
+  background: #162955; /* fundo escuro elegante */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.search-result:hover {
+  background: #2f2f4a; /* muda o tom no hover */
+  transform: translateX(4px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔹 Quando estiver ativo */
+.search-result:active {
+  transform: translateX(0px) scale(0.98);
+  background: #3a3a5f;
+}
+
+/* 🔸 Texto "nenhum resultado encontrado" */
+.no-results {
+  font-size: 13px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+/* Firefox */
+.sidebar-menu-list {
+  scrollbar-width: thin;       /* 'auto' | 'thin' | 'none' */
+  scrollbar-color: #888 transparent; /* thumb e track */
+}
+
+/* Chrome, Edge, Safari */
+.sidebar-menu-list::-webkit-scrollbar {
+  width: 6px;                  /* largura da barra */
+}
+
+.sidebar-menu-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* cor da barra */
+  border-radius: 3px;                     /* borda arredondada */
+}
+
+.sidebar-menu-list::-webkit-scrollbar-track {
+  background: transparent;     /* fundo do track */
+}
+
+
+.sidebar-item.active .sidebar-icon {
+  color: #0a1d54;
+}
+
+/* ------------------ Card GTI Estilos ------------------ */
+.sidebar-footer {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.sidebar-app-title {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  height: 50px; /* ou defina uma altura fixa, ex: 80px */
+}
+
+.header-logo {
+  width: 150px;
+  height: auto;
+}
+
+
+
+/* ------------------ Conteúdo Principal (Scrollable) ------------------ */
+.main-content {
+  /* O MAIS IMPORTANTE: DESLOCA O CONTEÚDO PRINCIPAL */
+  margin-left: 280px; 
+  padding: 30px;
+  flex-grow: 1; /* Ocupa o restante do espaço horizontal */
+}
+
+.content-page h1 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.gti-logo {
+  display: block;          /* garante que seja tratado como bloco */
+  margin: 0 auto;          /* centraliza horizontalmente */
+  width: 280px;             /* define a largura desejada */
+  height: auto;            /* mantém a proporção */
+}
+
+.gti-card {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+
+    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55), 
+              box-shadow 0.35s ease;
+}
+
+.gti-card:hover {
+   transform: translateY(-8px); /* levanta um pouco mais */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.sidebar-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.expand-icon {
+  margin-right: 10px;
+}
+
+.sidebar-subitems {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px; /* identação dos subtítulos */
+}
+
+.sidebar-subitem {
+  padding: 5px 0;
+  font-size: 0.9em;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.sidebar-subitem:hover {
+  color: #162955;
+}
+
+
