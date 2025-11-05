@@ -1,0 +1,130 @@
+/* ================================== */
+/* AJUSTE PARA O BLOCO DE INTRODUÇÃO */
+/* ================================== */
+
+/* Container para os blocos lado a lado */
+.info-blocks-row {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os blocos */
+    margin-top: 25px;
+}
+
+/* Estilo base para todos os blocos */
+.info-block-full,
+.info-block-half {
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    line-height: 1.5;
+}
+
+/* Bloco de "Abrangência" (Full-width) */
+.info-block-full {
+    margin: 25px 0 0;
+}
+
+/* Estilo do bloco Azul Claro (Abrangência) */
+.blue-light-block {
+    background-color: #e8f0fe; /* Cor de fundo mais clara */
+    border: 1px solid #c2d6ff; /* Borda mais clara */
+}
+
+/* Blocos Menores (Half-width) */
+.info-block-half {
+    flex: 1; /* Faz com que os dois blocos ocupem o mesmo espaço */
+    min-width: 0; /* Ajuda na flexibilidade */
+}
+
+/* Estilo do bloco de "Segurança" (Azul Escuro/Médio) */
+.blue-bg-block {
+    background-color: #f4f6ff; /* Similar ao exemplo, com leve tom azulado */
+    border: 1px solid #dcdffc; 
+}
+
+/* Estilo do bloco de "Responsabilidade" (Verde Claro/Ciano) */
+.green-bg-block {
+    background-color: #f0f7f4; /* Fundo levemente esverdeado/azulado */
+    border: 1px solid #cce8e0;
+}
+
+
+/* Título dentro dos blocos (Abrangência, Segurança, Responsabilidade) */
+.info-block-title {
+    font-size: 1.15rem;
+    color: #1a237e; /* Cor do título principal */
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo dos parágrafos dentro dos blocos, se precisar de ajuste de margem */
+.info-block-full p,
+.info-block-half p {
+    margin: 0; /* Remove a margem padrão do .section p */
+    text-align: left; /* Opcional, se o justify não ficar bom em blocos curtos */
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Para o primeiro parágrafo dentro do .info-block-full (Abrangência) */
+.info-block-full .no-margin {
+    margin-top: 5px; 
+}
+
+
+/* ================================== */
+/* ESTILIZAÇÃO DE ÍCONES (EXEMPLO) */
+/* (Adapte isso para a sua biblioteca de ícones) */
+/* ================================== */
+
+/* Ajuste o H2 para alinhar com o ícone no topo */
+.section-title-intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Mantém o espaçamento original do h2 */
+}
+
+/* Ícone do Livro/Documento no título principal (simulação) */
+.section-title-intro::before {
+    width: 35px;
+    height: 35px;
+    background-color: #2e7d32; /* Cor de fundo do ícone */
+    -webkit-mask: url('URL_DA_SUA_IMAGEM_BANNER.png') no-repeat 50% 50%; /* Se for usar imagem */
+    mask: url('URL_DA_SUA_IMAGEM_BANNER.png') no-repeat 50% 50%;
+    mask-size: contain;
+    border-radius: 5px;
+    /* Se você for usar uma biblioteca de ícones, use a classe dela aqui */
+}
+
+
+/* Ícones dentro dos blocos (Simulação para os spans) */
+.icon-shield-lg,
+.icon-lock-lg,
+.icon-users-lg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 5px;
+    color: white; /* Cor do ícone */
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon-shield-lg {
+    background-color: #3f51b5; /* Azul Escuro */
+    /* Você pode substituir por um ícone de escudo */
+}
+
+.icon-lock-lg {
+    background-color: #1e88e5; /* Azul Mais Claro */
+    /* Você pode substituir por um ícone de cadeado */
+}
+
+.icon-users-lg {
+    background-color: #43a047; /* Verde */
+    /* Você pode substituir por um ícone de pessoas/usuários */
+}
