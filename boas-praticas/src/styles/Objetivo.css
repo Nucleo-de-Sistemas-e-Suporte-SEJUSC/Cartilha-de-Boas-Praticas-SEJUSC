@@ -106,3 +106,53 @@
 .lista-detalhada-objetivo li .lista {
     margin-top: 10px;
 }
+
+/* ================================== */
+/* LAYOUT: OBJETIVOS (LISTA + IMAGEM) */
+/* ================================== */
+
+.objetivos-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* espaço entre lista e imagem */
+    margin-top: 20px;
+    flex-wrap: wrap; /* permite adaptação no mobile */
+}
+
+/* Container da imagem */
+.objetivos-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.objetivos-imagem img {
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Container da lista */
+.check-list-container {
+    flex: 2;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+    .objetivos-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .check-list-container {
+        max-width: 100%;
+    }
+
+    .objetivos-imagem img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+}

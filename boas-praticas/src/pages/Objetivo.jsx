@@ -23,18 +23,23 @@ export default function Intro() {
                 práticas de uso de tecnologia e proteção de dados, estabelecendo diretrizes claras e objetivas.
             </p>
             
-            {/* Título da Lista Estilizada - Sem o Bloco Azul em volta */}
             <h3 className="list-main-title no-border">Objetivos Específicos</h3>
 
-            {/* Lista Estilizada (Sem o bloco azul em volta) */}
-            <div className="check-list-container no-padding-margin">
-                <CheckListItem>Garantir o uso adequado e seguro dos recursos tecnológicos</CheckListItem>
-                <CheckListItem>Proteger informações sensíveis e dados pessoais</CheckListItem>
-                <CheckListItem>Prevenir incidentes de segurança e vazamento de dados</CheckListItem>
-                <CheckListItem>Assegurar conformidade com a LGPD e normas internas</CheckListItem>
-                <CheckListItem>Promover a conscientização sobre segurança da informação</CheckListItem>
-                <CheckListItem>Estabelecer responsabilidades claras para todos os usuários</CheckListItem>
-            </div>
+<div className="objetivos-wrapper">
+  <div className="check-list-container no-padding-margin">
+    <CheckListItem>Garantir o uso adequado e seguro dos recursos tecnológicos</CheckListItem>
+    <CheckListItem>Proteger informações sensíveis e dados pessoais</CheckListItem>
+    <CheckListItem>Prevenir incidentes de segurança e vazamento de dados</CheckListItem>
+    <CheckListItem>Assegurar conformidade com a LGPD e normas internas</CheckListItem>
+    <CheckListItem>Promover a conscientização sobre segurança da informação</CheckListItem>
+    <CheckListItem>Estabelecer responsabilidades claras para todos os usuários</CheckListItem>
+  </div>
+
+  <div className="objetivos-imagem">
+    <img src="public\icone_objetivo_atrativo.png" alt="Ilustração dos objetivos" />
+  </div>
+</div>
+
 
             {/* Subseção 2.1 - Proteção de Dados (Usando h3) */}
             <h3 className="sub-section-title">2.1 - Proteção de Dados</h3>

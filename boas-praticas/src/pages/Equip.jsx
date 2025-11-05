@@ -43,6 +43,9 @@ export default function Intro() {
 
   <h3 id="perifericos">3.2 - Periféricos e Outros Dispositivos</h3>
   <p>Os periféricos institucionais, como teclados, mouses, câmeras, fones de ouvido e outros acessórios, são recursos fornecidos para uso exclusivo nas atividades profissionais. É importante seguir as diretrizes abaixo:</p>
+       <div className="objetivos-imagem">
+    <img src="public\Equip.png" alt="Ilustração dos objetivos" />
+  </div>
 
     <div className="uso-computadores-container">
       <h4>3.2.1 Uso correto:</h4> Não utilize periféricos para fins pessoais ou atividades não relacionadas ao trabalho.
@@ -91,7 +94,11 @@ export default function Intro() {
         b. <strong>Atenção:</strong> Folhas com informações de usuários ou de
         servidores não podem ser jogadas em lixo comum, devem ser trituradas ou
         incineradas!
-      </li></div>
+      </li>
+      <div className="objetivos-imagem">
+    <img src="public\descarte.png" alt="Ilustração dos objetivos" />
+  </div>
+      </div>
     </ul>
 
 
@@ -149,7 +156,12 @@ export default function Intro() {
   <div className="lista">
   <li>a.	Os equipamentos de TI não podem ser trocados de setor sem autorização formal da GTI.</li>
   <li>b.	Celulares e Chips corporativos não podem ser trocados de usuários, devendo nesse caso, realizar a devolução do aparelho e do chip ao setor de TI que irá lavrar termo de recebimento do equipamento e posterior Termo de Responsabilidade para o novo usuário.</li>
-</div></p>
+</div>
+ <div className="objetivos-imagem">
+    <img src="public\gti.png" alt="Ilustração dos objetivos" />
+  </div>
+
+</p>
       
         </div>
     );

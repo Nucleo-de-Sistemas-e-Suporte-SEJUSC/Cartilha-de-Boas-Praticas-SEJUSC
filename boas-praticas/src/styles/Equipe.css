@@ -22,12 +22,15 @@
 
 /* Container dos cards da equipe */
 .team-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    justify-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden; /* previne estouro lateral */
 }
 
 /* Limitar até 5 cards por linha */
@@ -41,6 +44,7 @@
     .team-container {
         grid-template-columns: repeat(4, 1fr);
     }
+    
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
@@ -69,7 +73,7 @@
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    width: 260px;
+
 }
 
 .team-card:hover {
