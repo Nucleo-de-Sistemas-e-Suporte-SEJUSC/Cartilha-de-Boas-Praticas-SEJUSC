@@ -43,7 +43,13 @@ export default function Intro() {
   <h4>7.2.2 Consequências de violações:</h4>
  <div className="lista">
     <li>a. O uso inadequado dos recursos pode resultar em advertências, sanções administrativas ou medidas disciplinares, dependendo da gravidade da infração.</li>
-  </div></div></p>
+  </div></div>
+  
+    <div className="conclusao-imagem">
+        <img src="public\audit1.png" alt="Ilustração dos objetivos" />
+    </div>
+  
+  </p>
 
         </div>
   );

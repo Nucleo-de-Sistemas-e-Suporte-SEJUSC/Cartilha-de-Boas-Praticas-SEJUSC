@@ -54,6 +54,10 @@ export default function Intro() {
 
             </div>
             
+            <div className="objetivos-imagem">
+        <img src="public\LGPD.png" alt="Ilustração dos objetivos" />
+    </div>
+
         </div>
     );
 }

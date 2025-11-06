@@ -156,3 +156,80 @@
         margin-top: 20px;
     }
 }
+
+
+/* Container Pai: Define a disposição Lado-a-Lado */
+.container-incidentes {
+    display: flex; 
+    flex-direction: row; /* Imagem (1º) à esquerda, Lista (2º) à direita */
+    
+    gap: 30px; /* Espaço entre a imagem e a lista */
+    
+    /* REMOÇÃO CRUCIAL:
+       1. REMOVA "max-width" se quiser que o container siga o resto do texto
+       2. REMOVA "margin: 0 auto;" para DESCENTRALIZAR
+       3. REMOVA "padding: 20px 0;" se quiser que comece na borda
+    */
+    
+    /* Mantenha o alinhamento vertical no topo: */
+    align-items: flex-start; 
+}
+
+/* Contêiner da Imagem (Ajuste o tamanho e comportamento) */
+.incidentes-imagem {
+    /* Defina uma largura fixa ou um tamanho máximo para a imagem */
+    flex-shrink: 0; /* Impede que a imagem encolha demais */
+    width: 300px; /* Largura para a imagem na desktop */
+    line-height: 0; 
+}
+
+.incidentes-imagem img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* Contêiner da Lista: Garante o alinhamento do texto */
+.incidentes-lista {
+    flex: 1; /* Permite que a lista ocupe o espaço restante */
+    
+    /* Garante que o texto da lista e os marcadores fiquem à esquerda */
+    text-align: left; 
+}
+
+/* Lista em si: Garante que os itens comecem à esquerda do seu contêiner */
+.lista-alfabetica {
+    list-style: none; 
+    padding-left: 0; /* Remove o padding padrão da UL */
+    margin-left: 0; /* Remove a margem padrão da UL */
+    
+    /* Se você quer os marcadores a, b, c, d... */
+    list-style-type: none; 
+}
+
+/* Se você estiver simulando os marcadores com 'a. ', 'b. ' no <li>: */
+.lista-alfabetica li {
+    margin-bottom: 10px;
+    /* Garante que cada item não tenha centralização */
+    text-align: left; 
+}
+
+/* Responsividade (para telas menores) */
+@media (max-width: 768px) {
+    .container-incidentes {
+        flex-direction: column; /* Coloca a lista e a imagem uma embaixo da outra */
+        gap: 20px;
+        /* Alinha todo o conteúdo da coluna à esquerda, para seguir o resto do texto */
+        align-items: flex-start; 
+    }
+    
+    .incidentes-imagem {
+        /* Garante que a imagem ocupe a largura total ou tenha uma largura razoável */
+        width: 100%;
+        text-align: center; /* Centraliza a imagem em modo coluna, se for melhor */
+    }
+    
+    .incidentes-lista {
+        width: 100%; /* Ocupa a largura total */
+    }
+}

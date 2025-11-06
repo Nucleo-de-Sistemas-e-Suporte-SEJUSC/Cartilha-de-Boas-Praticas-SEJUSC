@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../styles/AllPages.css";
+import "../styles/Allpages.css";
 
 
 import Intro from "./Intro";

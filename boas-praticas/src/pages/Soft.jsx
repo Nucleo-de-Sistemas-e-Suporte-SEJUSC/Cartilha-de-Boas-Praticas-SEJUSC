@@ -24,6 +24,13 @@ export default function Intro() {
   </div>
   </div>
       
+        
+    <div className="conclusao-imagem">
+        <img src="public\soft.png" alt="Ilustração dos objetivos" />
+    </div>
+  
+
+
   <h3 id="sistemas">4.2 - Sistemas Internos</h3>
   <p>O acesso e o uso dos sistemas internos da SEJUSC, como o SIGED, Rede e outros sistemas institucionais, demandam responsabilidade e práticas seguras:</p>
 

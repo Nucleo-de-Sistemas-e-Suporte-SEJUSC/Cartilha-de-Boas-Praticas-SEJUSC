@@ -79,15 +79,28 @@ export default function Intro() {
                     <h4>2.2.1 Relatar incidentes:</h4>
                     <p className="no-bottom-margin">Comunicar imediatamente à GTI qualquer incidente de segurança, como:</p>
                     
-                    {/* Lista interna com letras */}
-                    <ul className="lista-alfabetica">
-                        <li>a. E-mails suspeitos ou fraudulentos;</li>
-                        <li>b. Vazamentos de senha;</li>
-                        <li>c. Acessos indevidos a sistemas ou informações confidenciais;</li>
-                        <li>d. Uso inadequado de computadores, notebooks corporativos e dados.</li>
-                    </ul>
+                
+<div className="container-incidentes">
+    
+    {/* 1. Imagem (Vai para a Esquerda) */}
+    <div className="incidentes-imagem">
+        <img src="public\incidentes.png" alt="Ilustração dos objetivos" />
+    </div>
+    
+    {/* 2. Contêiner da lista (Vai para a Direita) */}
+    <div className="incidentes-lista">
+        <ul className="lista-alfabetica">
+            <li>a. E-mails suspeitos ou fraudulentos;</li>
+            <li>b. Vazamentos de senha;</li>
+            <li>c. Acessos indevidos a sistemas ou informações confidenciais;</li>
+            <li>d. Uso inadequado de computadores, notebooks corporativos e dados.</li>
+        </ul>
+    </div>
+    
+</div>
                 </li>
             </ul>
+
 
         </div>
     );

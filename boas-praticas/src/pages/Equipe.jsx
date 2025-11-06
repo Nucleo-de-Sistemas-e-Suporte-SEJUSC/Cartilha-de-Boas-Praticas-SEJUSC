@@ -7,6 +7,8 @@ import Amir from '../assets/Amir.jpeg';
 import Yasmao from '../assets/Yasmao.png';
 import Marti from '../assets/Marti.jpeg';
 import Mini from '../assets/Mini.jpeg';
+import Alcir from '../assets/Alcir.jpeg';
+import Blenda from '../assets/Blenda.jpeg';
 
 export default function Equipe() {
   const membros = [
@@ -43,7 +45,7 @@ export default function Equipe() {
     {
       nome: "Alcir Filho",
       funcao: "Técnico de Redes",
-      foto: "/images/.png",
+      foto: Alcir,
     },
     {
       nome: "Milena Costa",
@@ -58,7 +60,7 @@ export default function Equipe() {
     {
       nome: "Blenda Nascimento",
       funcao: "Administrativo",
-      foto: "/images/.png",
+      foto: Blenda,
     },
   ];
 

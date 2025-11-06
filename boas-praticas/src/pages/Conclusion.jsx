@@ -47,7 +47,13 @@ export default function Intro() {
     Em caso de dúvidas ou necessidade de suporte, a GTI está à disposição para
     atender as demandas e orientar os colaboradores sobre boas práticas de
     segurança da informação.
-  </p></p>
+  </p>
+  
+  <div className="conclusion-imagem">
+        <img src="public\conclusion.png" alt="Ilustração dos objetivos" />
+    </div>
+  
+  </p>
 
         </div>
     );

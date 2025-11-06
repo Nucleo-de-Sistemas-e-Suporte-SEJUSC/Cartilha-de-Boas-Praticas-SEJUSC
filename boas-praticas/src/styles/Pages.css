@@ -173,3 +173,98 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #5c6bc0;
 }
+
+/* Container da imagem */
+.conclusao-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;      /* opcional, centraliza verticalmente */
+  max-width: 100%;          /* garante que o container não exceda a tela */
+}
+
+/* Imagem responsiva base */
+.conclusao-imagem img {
+  display: block;           /* evita gaps abaixo da imagem */
+  width: 100%;              /* IMPORTANT: faz a imagem encolher conforme o container */
+  max-width: 1450px;        /* mantém o tamanho máximo no desktop */
+  height: auto;             /* mantém proporção */
+  object-fit: contain;      /* opcional: mantém proporção dentro do box */
+}
+
+/* Container da imagem */
+.conclusion-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Imagem responsiva */
+.conclusion-imagem img {
+  display: block;
+  width: 100%;          /* Ocupa a largura total do container */
+  max-width: 800px;    /* Tamanho máximo no desktop */
+  height: auto;         /* Mantém proporção */
+  object-fit: contain;  /* Garante que não distorça */
+  border-radius: 10px;  /* opcional, só pra estética */
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .conclusion-imagem img {
+    max-width: 900px;
+  }
+}
+
+/* Celulares grandes (até 768px) */
+@media (max-width: 768px) {
+  .conclusion-imagem img {
+    max-width: 600px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .conclusion-imagem {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .conclusion-imagem img {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+
+/* Ajustes para tablets e celulares (opcional) */
+@media (max-width: 1024px) {
+  .conclusao-imagem img {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conclusao-imagem {
+    margin: 20px 0;
+  }
+  .conclusao-imagem img {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conclusao-imagem {
+    flex-direction: column;
+    align-items: center;
+  }
+  .conclusao-imagem img {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
