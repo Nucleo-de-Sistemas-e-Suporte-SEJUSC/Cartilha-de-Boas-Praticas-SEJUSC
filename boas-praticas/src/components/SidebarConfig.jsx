@@ -5,6 +5,8 @@ import {
   FaEye, FaFileAlt, FaExclamationTriangle, FaCodeBranch, FaWindowRestore
 } from 'react-icons/fa';
 
+import card from '../assets/logogticard.png';
+
 export const menuItems = [
   {
     title: 'INTRODUÇÃO', path: '/all#intro', icon: <FaBook />,
@@ -326,6 +328,6 @@ export const menuItems = [
 
 export const gtiCard = {
   path: '/equipe',
-  icon: <img src="/logogticard.png" alt="Logo GTI" className="gti-logo" />
+  icon: <img src={card} alt="Logo GTI" className="gti-logo" />
 };
 

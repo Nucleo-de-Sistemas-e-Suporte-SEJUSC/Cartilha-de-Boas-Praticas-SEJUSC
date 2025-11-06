@@ -1,4 +1,5 @@
 import '../styles/Intro.css';
+import LGPD from '../assets/LGPD.png';
 
 // Importe sua imagem aqui, se ela for um ícone ou banner real no título
 // import banner from '../assets/banner.png'; // Se 'banner.png' for o ícone do livro no título
@@ -55,7 +56,7 @@ export default function Intro() {
             </div>
             
             <div className="objetivos-imagem">
-        <img src="public\LGPD.png" alt="Ilustração dos objetivos" />
+        <img src={LGPD} alt="Ilustração dos objetivos" />
     </div>
 
         </div>

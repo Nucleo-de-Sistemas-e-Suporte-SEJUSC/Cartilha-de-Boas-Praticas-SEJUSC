@@ -1,4 +1,5 @@
 import '../styles/Pages.css';
+import audit from '../assets/audit1.png';
 
 export default function Intro() {
   return (
@@ -46,7 +47,7 @@ export default function Intro() {
   </div></div>
   
     <div className="conclusao-imagem">
-        <img src="public\audit1.png" alt="Ilustração dos objetivos" />
+        <img src={audit} alt="Ilustração dos objetivos" />
     </div>
   
   </p>

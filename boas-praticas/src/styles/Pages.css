@@ -1,6 +1,7 @@
 /* ===================== */
 /* ESTILO GLOBAL PADRÃO  */
 /* ===================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     
-    background-image: url('/fundocartilha.png');
+    background-image: url('../assets/fundocartilha.png');
     
     /* PROPRIEDADES DE AJUSTE */
     background-size: cover;          /* Faz a imagem COBRIR todo o body */

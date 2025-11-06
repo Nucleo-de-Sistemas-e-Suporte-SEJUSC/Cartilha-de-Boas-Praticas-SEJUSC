@@ -1,5 +1,6 @@
 import '../styles/Objetivo.css';
-
+import incidentes from '../assets/incidentes.png';
+import icone from '../assets/icone_objetivo_atrativo.png';
 // Mantenha o componente auxiliar CheckListItem
 const CheckListItem = ({ children }) => (
     <div className="check-list-item">
@@ -36,7 +37,7 @@ export default function Intro() {
   </div>
 
   <div className="objetivos-imagem">
-    <img src="public\icone_objetivo_atrativo.png" alt="Ilustração dos objetivos" />
+    <img src={icone} alt="Ilustração dos objetivos" />
   </div>
 </div>
 
@@ -84,7 +85,7 @@ export default function Intro() {
     
     {/* 1. Imagem (Vai para a Esquerda) */}
     <div className="incidentes-imagem">
-        <img src="public\incidentes.png" alt="Ilustração dos objetivos" />
+        <img src={incidentes} alt="Ilustração dos objetivos" />
     </div>
     
     {/* 2. Contêiner da lista (Vai para a Direita) */}

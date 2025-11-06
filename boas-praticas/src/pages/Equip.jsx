@@ -1,4 +1,7 @@
 import '../styles/Pages.css';
+import Equip from '../assets/Equip.png';
+import descarte from '../assets/descarte.png';
+import gti from '../assets/gti.png';
 
 export default function Intro() {
     return (
@@ -44,7 +47,7 @@ export default function Intro() {
   <h3 id="perifericos">3.2 - Periféricos e Outros Dispositivos</h3>
   <p>Os periféricos institucionais, como teclados, mouses, câmeras, fones de ouvido e outros acessórios, são recursos fornecidos para uso exclusivo nas atividades profissionais. É importante seguir as diretrizes abaixo:</p>
        <div className="objetivos-imagem">
-    <img src="public\Equip.png" alt="Ilustração dos objetivos" />
+    <img src={Equip} alt="Ilustração dos objetivos" />
   </div>
 
     <div className="uso-computadores-container">
@@ -96,7 +99,7 @@ export default function Intro() {
         incineradas!
       </li>
       <div className="objetivos-imagem">
-    <img src="public\descarte.png" alt="Ilustração dos objetivos" />
+    <img src={descarte} alt="Ilustração dos objetivos" />
   </div>
       </div>
     </ul>
@@ -158,7 +161,7 @@ export default function Intro() {
   <li>b.	Celulares e Chips corporativos não podem ser trocados de usuários, devendo nesse caso, realizar a devolução do aparelho e do chip ao setor de TI que irá lavrar termo de recebimento do equipamento e posterior Termo de Responsabilidade para o novo usuário.</li>
 </div>
  <div className="objetivos-imagem">
-    <img src="public\gti.png" alt="Ilustração dos objetivos" />
+    <img src={gti} alt="Ilustração dos objetivos" />
   </div>
 
 </p>

@@ -1,4 +1,5 @@
 import '../styles/Pages.css';
+import conc from '../assets/conclusion.png';
 
 export default function Intro() {
     return (
@@ -50,7 +51,7 @@ export default function Intro() {
   </p>
   
   <div className="conclusion-imagem">
-        <img src="public\conclusion.png" alt="Ilustração dos objetivos" />
+        <img src={conc} alt="Ilustração dos objetivos" />
     </div>
   
   </p>

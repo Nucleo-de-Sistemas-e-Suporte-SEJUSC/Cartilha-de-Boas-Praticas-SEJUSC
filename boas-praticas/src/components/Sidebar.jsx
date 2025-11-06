@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { menuItems, gtiCard } from "../components/SidebarConfig";
 import "../styles/Sidebar.css";
 import Search from "./Search";
+import SEJUSC from '../assets/SEJUSC.png';
 
 const SidebarItem = ({
   title,
@@ -112,7 +113,7 @@ const Sidebar = () => {
     <div className="sidebar-container">
       <div className="sidebar-header">
         <div className="sidebar-app-title">
-          <img src="/SEJUSC.png" alt="Logo SEJUSC" className="header-logo" />
+          <img src={SEJUSC} alt="Logo SEJUSC" className="header-logo" />
         </div>
 
         <Search query={query} setQuery={setQuery} />

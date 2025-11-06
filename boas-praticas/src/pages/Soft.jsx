@@ -1,4 +1,5 @@
 import '../styles/Pages.css';
+import soft from '../assets/soft.png';
 
 export default function Intro() {
     return (
@@ -26,7 +27,7 @@ export default function Intro() {
       
         
     <div className="conclusao-imagem">
-        <img src="public\soft.png" alt="Ilustração dos objetivos" />
+        <img src={soft} alt="Ilustração dos objetivos" />
     </div>
   
 
